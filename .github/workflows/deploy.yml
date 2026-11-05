@@ -21,6 +21,10 @@ jobs:
             set ftp:ssl-allow yes;
             set ssl:check-hostname no;
             mirror -R --only-newer --verbose \
-              --exclude-glob .git* --exclude-glob .github/ \
+              --exclude-glob .git/ \
+              --exclude-glob .github/ \
+              --exclude-glob .gitignore \
+              --exclude-glob sftp.json \
+              --exclude-glob .vscode/ \
               ./ /ddtplaneta_ru/public_html/;
             quit"
