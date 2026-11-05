@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Технические работы</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f6f9; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
-        .container { max-width: 500px; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #50a2ec; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; margin: 0; padding: 24px; text-align: center; }
+        .container { width: 100%; max-width: 500px; padding: 40px; background: white; border-radius: 7px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h1 { font-size: 24px; margin-bottom: 10px; color: #2c3e50; }
         p { font-size: 16px; color: #7f8c8d; line-height: 1.5; }
         .icon { font-size: 48px; margin-bottom: 20px; }
+        .contacts { margin-top: 48px; }
+        .contacts h2 { font-size: 18px; color: #2c3e50; margin-bottom: 5px; }
+        .contact-item { margin: 2px 0; line-height: 1.5; }
+        .contact-value { color: #333; }
+        .contact-value a { color: #2478bd; text-decoration: none; }
+        .contact-value a:hover { text-decoration: underline; }
+        .organization { font-size: 13px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon">🛠️</div>
-        <h1>Сайт временно недоступен</h1>
+        <div class="icon">🌏 + 🛠️ = ⏳</div>
+        <h1>Сайт «Планеты» временно недоступен</h1>
         <p>Мы проводим технические работы. Пожалуйста, зайдите позже.</p>
+        <section class="contacts" aria-labelledby="contacts-heading">
+            <h2 id="contacts-heading">Есть вопросы? Свяжитесь с нами:</h2>
+            <div class="contact-item">
+                <span class="contact-value">✉️ <a href="mailto:ddtplaneta@education70.ru">ddtplaneta@education70.ru</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-value">☎️ <a href="tel:+73822460741">(+7 3822) 46-07-41</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-value">🕒 Ежедневно с 09:00 до 20:00</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-value">📍 <a href="https://go.2gis.com/qnJmD" target="_blank" rel="noopener noreferrer">ул. Трудовая, д. 18, 634024, г. Томск, РФ</a></span>
+            </div>
+        </section>
+        <p class="organization">МАОУ ДО ДДТ «Планета» г. Томска</p>
     </div>
 </body>
 </html>
