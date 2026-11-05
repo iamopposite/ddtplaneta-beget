@@ -19,6 +19,7 @@ jobs:
         run: |
           lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_SERVER" -e "
             set ftp:ssl-allow yes;
+            set ssl:check-hostname no;
             mirror -R --only-newer --verbose \
               --exclude-glob .git* --exclude-glob .github/ \
               ./ /ddtplaneta_ru/public_html/;
